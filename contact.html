@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Maggie Macharia</title>
+  <meta name="description" content="Contact page with client-side validation." />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Maggie<span class="accent">.</span></a>
+      <button id="menu-btn" class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="primary-navigation" class="nav-links" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-main">
+    <h1>Contact Me</h1>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required minlength="2" />
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" class="btn">Send message</button>
+      </div>
+
+      <div id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+        Thanks — your message was validated locally. (For real delivery, wire up an email endpoint or Netlify forms.)
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 <strong>Maggie Macharia</strong></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

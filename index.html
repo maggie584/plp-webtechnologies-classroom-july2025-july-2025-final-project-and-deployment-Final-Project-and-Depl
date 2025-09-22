@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maggie Macharia — Portfolio</title>
+  <meta name="description" content="Portfolio demonstrating HTML5, CSS3 and JavaScript skills." />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Maggie<span class="accent">.</span></a>
+
+      <button id="menu-btn" class="menu-btn"
+        aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I'm <strong>Maggie</strong>, a web developer</h1>
+        <p class="lead">I design responsive, accessible websites using HTML5, CSS3 and JavaScript.</p>
+        <p><a class="btn" href="contact.html">Work with me</a></p>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects-section">
+      <h2>Featured Projects</h2>
+
+      <!-- Slider -->
+      <div class="slider" aria-roledescription="carousel" aria-label="Featured projects">
+        <div class="slides">
+          <div class="slide" data-title="Project One">
+            <img src="assets/images/project1.jpg" alt="Screenshot of Project One">
+            <div class="caption">
+              <h3>Project One</h3>
+              <p>Simple e-commerce UI with product filters.</p>
+            </div>
+          </div>
+
+          <div class="slide" data-title="Project Two">
+            <img src="assets/images/project2.jpg" alt="Screenshot of Project Two">
+            <div class="caption">
+              <h3>Project Two</h3>
+              <p>Portfolio grid with modal detail view.</p>
+            </div>
+          </div>
+
+          <div class="slide" data-title="Project Three">
+            <img src="assets/images/project3.jpg" alt="Screenshot of Project Three">
+            <div class="caption">
+              <h3>Project Three</h3>
+              <p>Interactive dashboard demo with charts.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+        <button class="slider-btn next" aria-label="Next slide">›</button>
+      </div>
+
+    </section>
+
+    <section class="container skills-section">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li>HTML5 — Semantic markup & accessibility</li>
+        <li>CSS3 — Flexbox, Grid, responsive design</li>
+        <li>JavaScript — DOM, events, form validation</li>
+        <li>Deployment — GitHub Pages / Netlify / Vercel</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 <strong>Maggie Macharia</strong> — Built with HTML5 • CSS3 • JavaScript</p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/maggie584/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/margaret-macharia-58a684279/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
